@@ -1,0 +1,25 @@
+{
+  "name": "The Human Machine — 100 Shocking Facts About Your Body & Brain",
+  "short_name": "Human Machine",
+  "description": "100 shocking and incredible scientific facts about the human body and brain across 10 chapters with quizzes, bookmarks, and search.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117",
+  "orientation": "portrait-primary",
+  "scope": "./",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%230d1117'/%3E%3Ctext x='96' y='140' font-size='120' text-anchor='middle'%3E🧬%3C/text%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%230d1117'/%3E%3Ctext x='256' y='370' font-size='300' text-anchor='middle'%3E🧬%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

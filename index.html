@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0d1117">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%230d1117'/%3E%3Ctext x='96' y='140' font-size='120' text-anchor='middle'%3E🧬%3C/text%3E%3C/svg%3E">
+<title>The Human Machine — 100 Shocking Facts About Your Body & Brain</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Reading Progress Bar -->
+<div id="progress-bar"><div id="progress-fill"></div></div>
+
+<!-- Header -->
+<header id="header">
+  <div class="header-content">
+    <div class="header-left">
+      <span class="heartbeat-icon">❤️</span>
+      <div>
+        <h1>The Human Machine</h1>
+        <p class="subtitle">100 Shocking & Incredible Facts About Your Body & Brain</p>
+      </div>
+    </div>
+    <div class="header-right">
+      <button id="btn-sound" class="icon-btn" title="Toggle Sound">🔊</button>
+      <button id="btn-lang" class="icon-btn" title="Switch Language">🇬🇧</button>
+      <button id="btn-random" class="icon-btn" title="Random Fact">🎲</button>
+      <button id="btn-search" class="icon-btn" title="Search">🔍</button>
+    </div>
+  </div>
+</header>
+
+<!-- Desktop Sidebar -->
+<nav id="sidebar">
+  <ul id="chapter-list"></ul>
+</nav>
+
+<!-- Mobile Bottom Nav -->
+<nav id="bottom-nav">
+  <ul id="bottom-nav-list"></ul>
+  <button id="bottom-more" class="nav-more-btn" title="More Chapters">⋯</button>
+</nav>
+
+<!-- Main Content -->
+<main id="main-content">
+  <!-- Welcome / Landing -->
+  <section id="welcome-screen">
+    <div class="welcome-inner">
+      <div class="welcome-icon">🧬</div>
+      <h2>The Human Machine</h2>
+      <p>100 of the most shocking, incredible, and scientifically verified facts about the human body and brain.</p>
+      <p class="welcome-stats"><span id="wlcm-chapters">10 Chapters</span> · <span id="wlcm-facts">100 Facts</span> · <span id="wlcm-quiz">30 Quiz Questions</span></p>
+      <button id="btn-start" class="cta-btn" data-en="Start Reading →" data-ru="Начать чтение →">Start Reading →</button>
+      <div class="welcome-chapters-preview">
+        <span>🧠</span><span>🛡️</span><span>🚀</span><span>💤</span><span>🦠</span>
+        <span>👁️</span><span>🧬</span><span>❤️</span><span>⚡</span><span>💀</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter Content (hidden by default) -->
+  <section id="chapter-content" style="display:none;">
+    <div id="chapter-header" class="chapter-header"></div>
+    <div id="facts-container"></div>
+    <div id="quiz-container"></div>
+  </section>
+</main>
+
+<!-- Search Overlay -->
+<div id="search-overlay" class="overlay" style="display:none;">
+  <div class="overlay-content">
+    <div class="overlay-header">
+      <h2>🔍 Search 100 Facts</h2>
+      <button id="btn-close-search" class="icon-btn">✕</button>
+    </div>
+    <input type="text" id="search-input" placeholder="Search titles, explanations, weird parts..." autocomplete="off">
+    <div id="search-results"></div>
+  </div>
+</div>
+
+<!-- Quiz Modal -->
+<div id="quiz-modal" class="overlay" style="display:none;">
+  <div class="overlay-content quiz-overlay">
+    <div id="quiz-header"></div>
+    <div id="quiz-question"></div>
+    <div id="quiz-options"></div>
+    <div id="quiz-feedback" style="display:none;"></div>
+    <button id="btn-quiz-close" class="icon-btn close-quiz-btn">✕ Close Quiz</button>
+  </div>
+</div>
+
+<!-- More Chapters Modal (mobile) -->
+<div id="more-modal" class="overlay" style="display:none;">
+  <div class="overlay-content more-content">
+    <div class="overlay-header">
+      <h2>All Chapters</h2>
+      <button id="btn-close-more" class="icon-btn">✕</button>
+    </div>
+    <ul id="more-chapter-list"></ul>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="data-ru.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
